@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: end;
+    background: #e0e0e0;
+    padding: 6px;
+}
+
+.calc-window {
+    background: #f3f3f3;
+    border: 1px solid #888;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.top-bar .btn {
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    margin-left: 4px;
+}
+
+.visor {
+    background: #ffffff;
+    text-align: right;
+    font-size: 32px;
+    padding: 20px;
+    border-bottom: 1px solid #bbb;
+    overflow-x: auto;
+}
+
+.botoes button {
+    padding: 20px;
+    font-size: 18px;
+    border: none;
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.botoes button:nth-child(4n), .botoes button[data-action="equals"]{
+    background: #d8bf43;
+    color: #fff;
+}
+
+.botoes button[data-action="equals"]{
+    background: #229dad;
+    color: #fff;
+    grid-column: 3/5; /* Agora o botão de igual ocupa 2 colunas */
+}
