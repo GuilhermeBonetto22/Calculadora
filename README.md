@@ -1,2 +1,2 @@
 # Calculadora
-Atividade em sala de aula
+Atividade prática em sala de aula
